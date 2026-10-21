@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MMK Rewards</title>
+<style>
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background: #f0f4f9;
+  color: #172b43;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  text-align: center;
+}
+h1 { color: #1685e5; }
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 10px;
+  background: #1685e5;
+  color: white;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>MMK Rewards 🎁</h1>
+  <p>ကြိုဆိုပါတယ်!</p>
+  <h2 id="points">0 Points</h2>
+  <small>Demo Points သာဖြစ်ပြီး ငွေသားမဟုတ်ပါ။</small>
+</div>
+<div class="card">
+  <h3>🎯 Daily Bonus</h3>
+  <button onclick="bonus()">Bonus စမ်းယူမယ်</button>
+  <p id="message"></p>
+</div>
+<div class="card">
+  <h3>🎮 Free Games</h3>
+  <p>Quiz ဂိမ်း မကြာမီလာမည်။</p>
+</div>
+<div class="card">
+  <h3>💰 Wallet</h3>
+  <p>ငွေထုတ်စနစ် မတပ်ဆင်ရသေးပါ။</p>
+</div>
+<script>
+let points = 0;
+
+function bonus() {
+  points += 10;
+  document.getElementById("points").textContent =
+    points + " Points";
+  document.getElementById("message").textContent =
+    "Demo Bonus +10 Points ရပါပြီ!";
+}
+</script>
+</body>
+</html>
